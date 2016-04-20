@@ -1,13 +1,9 @@
 package com.kiev.java;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
-@Scope("prototype")
+
 public class ExecutorImpl<T> implements Executor<T> {
 
     private static final Validator<Object> DEFAULT_VALIDATOR = value -> true;
